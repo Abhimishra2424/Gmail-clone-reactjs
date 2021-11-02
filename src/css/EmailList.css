@@ -1,0 +1,65 @@
+.emaillist {
+  display: flex;
+  flex-direction: column;
+}
+
+.emaillist__settings {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  top: 0;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.emaillist__settings svg {
+  font-size: 18px;
+}
+
+.emaillist__right {
+  display: flex;
+  align-items: center;
+}
+
+.emaillist__right p {
+  font-size: 16px;
+}
+
+.emailtype {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.emailtype > .emailtype__option {
+  display: flex;
+  align-items: center;
+  min-width: 230px;
+  padding: 0 10px;
+  cursor: pointer;
+  border-bottom: 3px solid #fff;
+}
+
+.emailtype > .emailtype__option svg {
+  font-size: 20px;
+  color: gray;
+}
+
+.emailtype > .emailtype__option p {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.emailtype > .emailtype__option:hover {
+  background-color: #f5f5f5;
+}
+
+.emailtype__options--active {
+  border-bottom: 3px solid #d4001c !important;
+}
+
+.emailtype__options--active p,
+.emailtype__options--active svg {
+  color: #d4001c !important;
+  font-weight: bold;
+}
