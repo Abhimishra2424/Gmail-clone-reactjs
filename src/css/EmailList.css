@@ -47,7 +47,6 @@
 
 .emailtype > .emailtype__option p {
   font-size: 16px;
-  margin-left: 10px;
 }
 
 .emailtype > .emailtype__option:hover {
@@ -62,4 +61,60 @@
 .emailtype__options--active svg {
   color: #d4001c !important;
   font-weight: bold;
+}
+.emailbody {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+  padding: 0% 10px;
+  height: 40px;
+}
+.emailbody:hover {
+  box-shadow: 2px 2px 4px whitesmoke;
+  cursor: pointer;
+}
+
+.emailbody .email__left {
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  flex: 20%;
+}
+.emailbody .email__left svg {
+  font-size: 18px;
+  color: gray;
+  margin-right: 10px;
+}
+
+.emailbody .email__left h4 {
+  font-size: 14px;
+}
+
+.emailbody .email__middle {
+  display: flex;
+  align-items: center;
+  flex: 90%;
+}
+.email__middle .email__middle__msg {
+  display: flex;
+  width: 90%;
+}
+
+.emailbody .email__middle p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0% 20px;
+  max-width: 700px;
+}
+
+.emailbody .email__right {
+  display: flex;
+  align-items: center;
+  flex: 10%;
+  justify-content: flex-end;
+}
+.emailbody .email__right p {
+  font-size: 14px;
 }

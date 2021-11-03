@@ -1,6 +1,7 @@
 import React from "react";
 // import { Counter } from './features/counter/Counter';
 import "./App.css";
+import Compose from "./Compose";
 import EmailList from "./EmailList";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
@@ -13,6 +14,7 @@ function App() {
         <Sidebar />
         <EmailList />
       </div>
+      <Compose />
     </div>
   );
 }

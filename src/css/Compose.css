@@ -1,0 +1,110 @@
+.compose {
+  position: absolute;
+  bottom: 0%;
+  right: 70px;
+  min-width: 500px;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px rgb(51 51 51 / 59%);
+  background-color: #fff;
+}
+
+.compose .compose__header {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: #fff;
+  align-items: center;
+  padding: 7px 15px;
+}
+.compose .compose__header span {
+  font-size: 14px;
+}
+
+.compose__header__left {
+  font-size: flex;
+  align-items: center;
+}
+
+.compose__header__right {
+  display: flex;
+  align-items: center;
+}
+
+.compose .compose__header .compose__header__right svg {
+  font-size: 18px;
+  margin-left: 10px;
+  transform: 0.25 linear 0s;
+  padding: 3px;
+}
+.compose__header__right svg:nth-child(2) path {
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+.compose .compose__header .compose__header__right svg:hover {
+  background: #545454;
+  cursor: pointer;
+}
+
+.compose__body {
+  padding: 15px;
+}
+.compose__bodyform {
+  display: flex;
+  flex-direction: column;
+}
+
+.compose__bodyform input,
+textarea {
+  width: 100%;
+  height: 40px;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0 -1px 0 0 rgb(100 121 143/12%);
+  outline: none;
+  padding: 0px 10px;
+}
+
+.compose__body textarea {
+  height: auto;
+}
+
+.compose__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 10px;
+}
+
+.compose__footer__left button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+  background-color: royalblue;
+  outline: 0;
+  color: #fff;
+  font-size: 15px;
+  padding: 0px 5px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.compose__footer__left button svg {
+  border-left: 1px solid rgb(202, 198, 198);
+  margin-left: 15px;
+  padding: 7px 2px 6px 2px;
+}
+
+.compose__footer__right svg {
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 3px;
+  border-radius: 3px;
+  color: gray;
+  transition: 0.2 linear 0s;
+}
+.compose__footer__right svg:hover {
+  background-color: #eee;
+  color: #000;
+  cursor: pointer;
+}
