@@ -14,8 +14,11 @@ import CreateIcon from "@material-ui/icons/Create";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import DeleteIcon from "@material-ui/icons/Delete";
 import "./css/Compose.css";
+import { useDispatch } from "react-redux";
+import { closeSendMessage } from "./features/mailSlice";
 
 function Compose() {
+  const dispatch = useDispatch();
   return (
     <div className="compose">
       <div className="compose__header">
@@ -25,7 +28,7 @@ function Compose() {
         <div className="compose__header__right">
           <RemoveIcon />
           <HeightIcon />
-          <CloseIcon />
+          <CloseIcon onClick={() => dispatch(closeSendMessage())} />
         </div>
       </div>
       <div className="compose__body">
